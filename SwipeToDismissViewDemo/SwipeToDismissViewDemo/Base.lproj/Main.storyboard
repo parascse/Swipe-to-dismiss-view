@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Example View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ExampleViewController" customModule="SwipeToDismissViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cO-Im-SZp" customClass="UISwipableView" customModule="SwipeToDismissViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="25" width="343" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3m-AZ-NQo">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="a3m-AZ-NQo" firstAttribute="top" secondItem="2cO-Im-SZp" secondAttribute="top" id="AJk-w9-jfW"/>
+                                    <constraint firstAttribute="height" constant="60" id="aNU-uO-ov7"/>
+                                    <constraint firstAttribute="trailing" secondItem="a3m-AZ-NQo" secondAttribute="trailing" id="c0m-N2-rY1"/>
+                                    <constraint firstItem="a3m-AZ-NQo" firstAttribute="leading" secondItem="2cO-Im-SZp" secondAttribute="leading" id="guY-6E-5zU"/>
+                                    <constraint firstAttribute="bottom" secondItem="a3m-AZ-NQo" secondAttribute="bottom" id="mEn-NU-zdK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="containerView" destination="8bC-Xf-vdC" id="RFG-nV-REt"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zi-i9-mCO">
+                                <rect key="frame" x="0.0" y="115" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLJ-DO-SBC" customClass="UISwipableView" customModule="SwipeToDismissViewDemo" customModuleProvider="target">
+                                        <rect key="frame" x="94" y="0.0" width="187.5" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36f-rU-C4e">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="60"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.15646553039550781" green="0.68700659275054932" blue="0.48205763101577759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="36f-rU-C4e" firstAttribute="top" secondItem="gLJ-DO-SBC" secondAttribute="top" id="5Xi-vH-yR7"/>
+                                            <constraint firstItem="36f-rU-C4e" firstAttribute="leading" secondItem="gLJ-DO-SBC" secondAttribute="leading" id="9dV-Ha-beZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="36f-rU-C4e" secondAttribute="trailing" id="fwC-cp-0cS"/>
+                                            <constraint firstAttribute="bottom" secondItem="36f-rU-C4e" secondAttribute="bottom" id="wmF-HZ-mJd"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="containerView" destination="9Zi-i9-mCO" id="g3R-5f-P2k"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.54874559859154926" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gLJ-DO-SBC" firstAttribute="top" secondItem="9Zi-i9-mCO" secondAttribute="top" id="3Nx-en-ZTE"/>
+                                    <constraint firstAttribute="bottom" secondItem="gLJ-DO-SBC" secondAttribute="bottom" id="JlU-Y0-0EG"/>
+                                    <constraint firstItem="gLJ-DO-SBC" firstAttribute="width" secondItem="9Zi-i9-mCO" secondAttribute="width" multiplier="0.5" id="aj6-q5-YKh"/>
+                                    <constraint firstItem="gLJ-DO-SBC" firstAttribute="centerX" secondItem="9Zi-i9-mCO" secondAttribute="centerX" id="bvT-m4-bXd"/>
+                                    <constraint firstAttribute="height" constant="60" id="ls8-VM-LjY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2cO-Im-SZp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="25" id="CWm-Ug-4Tz"/>
+                            <constraint firstItem="9Zi-i9-mCO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Owx-4E-8E8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2cO-Im-SZp" secondAttribute="trailing" constant="16" id="P0f-1W-HwC"/>
+                            <constraint firstItem="9Zi-i9-mCO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QFJ-FF-SSX"/>
+                            <constraint firstItem="2cO-Im-SZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Wt8-Gw-cdj"/>
+                            <constraint firstItem="9Zi-i9-mCO" firstAttribute="top" secondItem="2cO-Im-SZp" secondAttribute="bottom" constant="30" id="tKU-at-o83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="swipableViewGreen" destination="gLJ-DO-SBC" id="KF7-u8-fVL"/>
+                        <outlet property="swipableViewRed" destination="2cO-Im-SZp" id="KGm-VK-RNN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
