@@ -8,4 +8,4 @@ Steps to integrate:
 3. Connect the outlet for container(parent) of your swipable view i.e. propery containerView
 4. All set to test your swipe to dismiss view 
 
-<img src="https://github.com/parascse/Swipe-to-dismiss-view/blob/master/Demo.gif" width="100%" height="100%" />
+<img src="https://github.com/parascse/Swipe-to-dismiss-view/blob/master/Demo.gif" width="50%" height="50%" style="repeat-y" />
